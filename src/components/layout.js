@@ -5,6 +5,7 @@ import styled from 'styled-components'
 
 import Header from './header'
 import './layout.scss'
+//import 'bootstrap/dist/css/bootstrap.min.css'
 
 const StyledFooter = styled.footer`
   p{
