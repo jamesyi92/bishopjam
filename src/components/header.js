@@ -22,7 +22,6 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 // `;
 
 const StyledNav = styled(Navbar)`
-  position: absolute;
   .nav-item{
     margin-bottom: 0;
   }
