@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import styled from 'styled-components'
@@ -13,6 +13,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import StyledBackgroundSection from '../components/bgHeader'
+import SearchComp from '../components/SearchComp'
 
 const StyledSection = styled.section`
   >div {
@@ -32,6 +33,12 @@ const IntroCard = styled.div`
   }
 `
 
+const searchIndices = [
+  { name: `Pages`, title: `Pages`, hitComp: `PageHit` },
+  { name: `Posts`, title: `Blog Posts`, hitComp: `PostHit` },
+]
+
+
 const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -42,6 +49,7 @@ const IndexPage = (props) => (
           <Row className="justify-content-center">
             <Col md="10">
               <h3>Our clients rely on our ability to combine investigative experience with deep knowledge of compliance and privacy standards and local laws to uncover crucial information that leads to their success.</h3>
+              <SearchComp />
             </Col>
           </Row>
         </Container>

@@ -11,7 +11,7 @@ import {
 import styled from 'styled-components';
 import SterlingLogo from '../images/sterling-svg-logo.svg';
 import { Link } from 'gatsby';
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+//import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 /* Conditional styles based on props */
 // const Button = styled.button`
@@ -70,9 +70,9 @@ class Header extends Component {
     return (
       <StyledNav expand="md">
         <Container>
-          <AniLink paintDrip hex="#ff4700" duration={1} className="navbar-brand" to="/">
+          <Link className="navbar-brand" to="/">
             <StyledLogo />
-          </AniLink>
+          </Link>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar>
